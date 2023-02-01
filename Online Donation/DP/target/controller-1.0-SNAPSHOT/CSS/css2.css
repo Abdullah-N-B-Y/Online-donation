@@ -1,0 +1,135 @@
+
+
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+table {
+    background-color: #49a09d;
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+    padding: 15px;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+th {
+    text-align: left;
+}
+
+
+th {
+    background-color: #55608f;
+}
+
+hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+td {
+    position: relative;
+}
+hover {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255,255,255,0.2);
+    z-index: -1;
+}
+.input1
+{
+    position: absolute;
+    left: 800px;
+    top: 750px;
+}
+.input2
+{
+    position: absolute;
+    left: 1000px;
+    top: 750px;
+}
+.button1 {
+    position: absolute;
+    left: 800px;
+    top: 800px;
+}
+.button2 {
+    position: absolute;
+    left: 1000px;
+    top: 800px;
+}
+.button3 {
+    position: absolute;
+    left: 500px;
+    top: 500px;
+}
+.button4 {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+/* From uiverse.io */
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+
+/* From uiverse.io by @adamgiebl */
+.input-wrapper input {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 9em;
+    height: 2em;
+    color: lightcoral;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.input-wrapper input:focus {
+    outline-color: lightcoral;
+}

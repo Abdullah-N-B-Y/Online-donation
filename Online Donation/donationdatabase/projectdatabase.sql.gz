@@ -1,0 +1,80 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 31, 2022 at 01:03 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.4
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `projectdatabase`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dones`
+--
+
+CREATE TABLE `dones` (
+  `categorie` varchar(255) NOT NULL,
+  `location` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `Amount` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `dones`
+--
+
+INSERT INTO `dones` (`categorie`, `location`, `type`, `Amount`) VALUES
+('orphans', 'city', '', 0),
+('widows', 'city', '', 0),
+('refugees', 'city', '', 0),
+('disabilities', 'city', '', 0),
+('students', 'city', '', 0),
+('orphans', 'village', '', 0),
+('widows', 'village', 'Money donate', 13),
+('refugees', 'village', '', 0),
+('disabilities', 'village', '', 0),
+('students', 'village', '', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `donor`
+--
+
+CREATE TABLE `donor` (
+  `personKind` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `sum` int(11) NOT NULL,
+  `date` varchar(255) NOT NULL,
+  `repeating` varchar(255) NOT NULL,
+  `same` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `donor`
+--
+
+INSERT INTO `donor` (`personKind`, `type`, `address`, `sum`, `date`, `repeating`, `same`) VALUES
+('Food donate', 'orphans', '2022-05-31', 10, 'City', 'One Time', 'Just one time donate'),
+('widows', 'Money donate', 'Village', 13, '2022-05-31', 'Monthly', 'sameCategory');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
